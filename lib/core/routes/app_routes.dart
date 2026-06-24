@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+
 import '../../features/home/dev_menu_screen.dart';
 import '../../features/login/login_screen.dart';
 import '../../features/auth/auth_screen.dart';
 import '../../features/home/home_screen.dart';
 import '../../features/search_donor/search_donor_screen.dart';
+import '../../features/chat/chat_screen.dart';
 
 class AppRoutes {
   static const String initial = '/';
@@ -11,6 +13,7 @@ class AppRoutes {
   static const String auth = '/auth';
   static const String homePage = '/home-page';
   static const String searchDonor = '/search-donor';
+  static const String chat = '/chat';
 
   static Map<String, WidgetBuilder> getRoutes() {
     return {
@@ -19,6 +22,7 @@ class AppRoutes {
       auth: (context) => const AuthScreen(),
       homePage: (context) => const HomeScreen(),
       searchDonor: (context) => const SearchDonorScreen(),
+      chat: (context) => const ChatScreen(),
     };
   }
 }
