@@ -17,7 +17,9 @@ class BloodWankaApp extends StatelessWidget {
         primaryColor: const Color(0xFFE21B4C), // Color rojo base de tus interfaces
         useMaterial3: true,
       ),
-      initialRoute: AppRoutes.initial, // Inicia en el menú de desarrollo
+      // --- ESTE ES EL ÚNICO CAMBIO ---
+      // Inicia directamente en la interfaz de Quispe Ortiz
+      initialRoute: AppRoutes.login, 
       routes: AppRoutes.getRoutes(),
     );
   }
